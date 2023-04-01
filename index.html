@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aytor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <!-- CSS ONLY -->
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/venobox.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <!--NAV STARTS HERE-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./image/Logo.png" alt="">
+      </a>
+
+
+      <!--SMALL DEVICE MENU-->
+      <button class="togglerButton d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#smallMenu"
+        aria-controls="offcanvasExample">
+        <i class="fa-solid fa-align-left"></i>
+      </button>
+
+      <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="smallMenu"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="./image/Logo.png" alt=""
+              class="offCanvasLogo"></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+          <ul class="small_menu">
+            <li>
+              <a href="#">Home <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></a>
+            </li>
+            <li>
+              <a href="#">Shop <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></a>
+            </li>
+            <li>
+              <a href="#">Pages </a>
+            </li>
+            <li>
+              <a href="#">Features </a>
+            </li>
+            <li>
+              <a href="#">Blogs</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown link
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdwon1</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown2</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown3</a></li>
+              </ul>
+            </div>
+          </ul>
+          <div class="iconPanal">
+            <ul>
+              <li>
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="#"><img src="./image/Group.svg" alt="">
+                  <span class="overlay">0</span>
+                </a>
+
+
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!--SMALL DEVICE MENU ENDS-->
+
+      <div class="collapse navbar-collapse" id="myCustomNav">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home <i class="fa-solid fa-caret-down"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Shop <i class="fa-solid fa-caret-down"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Pages </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Features </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Contact </a>
+          </li>
+          <!--DROPDOWN MENU STARTS-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+              <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+              <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+            </ul>
+          </li>
+          <!--DROPDOWN MENU ENDS-->
+
+        </ul>
+
+      </div>
+      <div class="iconPanal d-none d-lg-block">
+        <ul>
+          <li>
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+          </li>
+          <li>
+            <a href="#"><img src="./image/Group.svg" alt="">
+              <span class="overlay">0</span>
+            </a>
+
+
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!--NAV ENDS HERE-->
+  <main>
+    <!--ABOUT PAGE STARTS HERE-->
+    <section id="about">
+
+      <div class="about_cnt">
+        <h1>About Us</h1>
+        <div class="breadcrumb d-block">
+          <ul>
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">About Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+
+
+
+
+    </section>
+    <!--ABOUT PAGE ENDS HERE-->
+    <!-- AETOR SHOP STARTS HERE-->
+    <section id="aetor_shop">
+      <div class="container">
+        <div class="row mx-0">
+          <div class="aetorPic col-lg-6 col-md-12">
+            <img src="./image/Group 29.png" alt="">
+          </div>
+          <div class="aetor_info col-lg-6">
+            <h1>Learn About </h1>
+            <p>Interactively underwhelm effective relationships whereas team driven paradigms. Uniquely impact impactful
+              meta-services vis -a-vis fully tested best practices. Appropriately e-enable fully.</p>
+            <ul>
+              <li><span><i class="fa-solid fa-circle-check"></i></span><a>Assertively customize robust potentialities
+                  and economical</a> </li>
+              <li><span><i class="fa-solid fa-circle-check"></i></span><a>Seamlessly disintermediate distributed
+                  intellectual capital.</a> </li>
+              <li><span><i class="fa-solid fa-circle-check"></i></span><a>Credibly enable B2C potentialities after
+                  strategic.</a> </li>
+            </ul>
+            <a href="#" class="button">Discover More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--AETOR SHOP ENDS HERE-->
+    <!--SHOP_ICON SECTION STARTS HERE-->
+    <section id="shop_icon">
+      <div class="container">
+        <div class="row">
+          <div class="shop_iconOne col-lg-3 col-md-6">
+            <img src="./image/Group 35.svg" alt="">
+            <h3>35.5k</h3>
+            <p>Products for sale</p>
+          </div>
+          <div class="shop_iconOne col-lg-3 col-md-6">
+            <img src="./image/Group 36.svg" alt="">
+            <h3>35.5k</h3>
+            <p>Products for sale</p>
+          </div>
+          <div class="shop_iconOne col-lg-3 col-md-6">
+            <img src="./image/Group 37.svg" alt="">
+            <h3>35.5k</h3>
+            <p>Products for sale</p>
+          </div>
+          <div class="shop_iconOne col-lg-3 col-md-6">
+            <img src="./image/Group 38.svg" alt="">
+            <h3>35.5k</h3>
+            <p>Products for sale</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!--SHOP_ICON SECTION ENDS HERE-->
+
+
+    <!--STORY SECTION STARTS HERE-->
+    <section id="special_offer">
+      <div class="row mx-0">
+        <div class="product_info col-lg-6">
+          <div class="offer_cnt">
+            <h3 class="heading">Our Story</h3>
+
+            <p class="paragraph">Synergistically pontificate focused services whereas intuitive leadership. Competently
+              predominate ubiquitous services rather than client-centric scenarios. Distinctively mesh B2C benefits for
+              superior customer service. Interactively e-enable inexpensive total linkage without quality materials.
+              Phosfluorescently negotiate.</p>
+            <p class="paragraph">Professionally exploit user-centric technology for seamless solutions. Objectively
+              morph unique strategic theme areas without cross functional mindshare. Synergistically aggregate adaptive
+              functionalities rather than enterprise-wide experiences. Completely maintain.</p>
+          </div>
+        </div>
+        <div class="product_video col-lg-6">
+          <div class="overlay"><span><a href="https://youtu.be/rkpzYNB6xks" class="venobox" data-autoplay="true"
+                data-vbtype="video"> <i class="fa-solid fa-play"></i></a></span></div>
+          <img src="./image/nature.jpg" alt="">
+        </div>
+      </div>
+
+    </section>
+    <!--STORY SECTION ENDS HERE-->
+
+    <!--PAYMENT_ICON SECTION STARTS HERE-->
+    <section id="payment">
+      <div class="payment_ship">
+        <ul>
+          <li>SHIPING <br><span>orders over <span class="dollar">$150</span></span></li>
+          <li>QUICK PAYMENT <br><span>orders over <span class="dollar">$150</span></span> </li>
+          <li>FREE RETURNS <br><span>orders over <span class="dollar">$150</span></span> </li>
+          <li>24/7 SUPPORT <br><span>orders over <span class="dollar">$150</span> </span></li>
+
+        </ul>
+      </div>
+    </section>
+    <!--PAYMENT_ICON SECTION ENDS HERE-->
+
+    <!--PROFILE SECTION STARTS HERE-->
+    <section id="profile">
+      <h1>Leadership Expart Team</h1>
+      <div class="container">
+
+        <div class="arrows">
+          <div class="left"><i class="fa-solid fa-chevron-left"></i></div>
+          <div class="right"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+        <div class="profile_slider">
+          <div class="profile_container col-lg-3">
+            <div class="profile_card">
+              <div class="profile_img">
+                <img src="./image/MichelRichardVertical.png" alt="">
+              </div>
+              <div class="profile_cnt">
+                <h5>Michel Richard</h5>
+                <p>Founder</p>
+                <ul>
+                  <li><span><i class="fa-brands fa-facebook"></i></span></li>
+                  <li><span><i class="fa-brands fa-twitter"></i></span></li>
+                  <li><span><i class="fa-brands fa-instagram"></i></span></li>
+                  <li><span><i class="fa-brands fa-pinterest-p"></i></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="profile_container col-lg-3">
+            <div class="profile_card">
+              <div class="profile_img">
+                <img src="./image/Sudjida Lufz.png" alt="">
+              </div>
+              <div class="profile_cnt">
+                <h5>Sudjida Lufz</h5>
+                <p>Founder</p>
+                <ul>
+                  <li><span><i class="fa-brands fa-facebook"></i></span></li>
+                  <li><span><i class="fa-brands fa-twitter"></i></span></li>
+                  <li><span><i class="fa-brands fa-instagram"></i></span></li>
+                  <li><span><i class="fa-brands fa-pinterest-p"></i></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="profile_container col-lg-3">
+            <div class="profile_card">
+              <div class="profile_img">
+                <img src="./image/Henry.png" alt="">
+              </div>
+              <div class="profile_cnt">
+                <h5>Doctor of Scientist</h5>
+                <p>Richard</p>
+                <ul>
+                  <li><span><i class="fa-brands fa-facebook"></i></span></li>
+                  <li><span><i class="fa-brands fa-twitter"></i></span></li>
+                  <li><span><i class="fa-brands fa-instagram"></i></span></li>
+                  <li><span><i class="fa-brands fa-pinterest-p"></i></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="profile_container col-lg-3">
+            <div class="profile_card">
+              <div class="profile_img">
+                <img src="./image/Maria.png" alt="">
+              </div>
+              <div class="profile_cnt">
+                <h5>Doctor of Scientist</h5>
+                <p>Richard</p>
+                <ul>
+                  <li><span><i class="fa-brands fa-facebook"></i></span></li>
+                  <li><span><i class="fa-brands fa-twitter"></i></span></li>
+                  <li><span><i class="fa-brands fa-instagram"></i></span></li>
+                  <li><span><i class="fa-brands fa-pinterest-p"></i></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="profile_container col-lg-3">
+            <div class="profile_card">
+              <div class="profile_img">
+                <img src="./image/daniel.png" alt="">
+              </div>
+              <div class="profile_cnt">
+                <h5>Doctor of Scientist</h5>
+                <p>Richard</p>
+                <ul>
+                  <li><span><i class="fa-brands fa-facebook"></i></span></li>
+                  <li><span><i class="fa-brands fa-twitter"></i></span></li>
+                  <li><span><i class="fa-brands fa-instagram"></i></span></li>
+                  <li><span><i class="fa-brands fa-pinterest-p"></i></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!--PROFILE SECTION ENDS HERE-->
+
+    <!--CUSTOMER SECTION STARTS HERE-->
+    <section id="customer" style="background-image: url(./image/Customar1.png); background-position: center; background-repeat: no-repeat;">
+      <div class="customer_slider">
+        <div class="container">
+          <div class="row align-items-center">
+            
+            <div class="customer_cnt">
+
+              <p>Distinctively revolutionize functional sources rather than cutting-edge interfaces. Appropriately
+                productize next-generation infomediaries without interoperable e-business. Progressively empower.</p>
+              <h3>Alexzender Markos</h3>
+              <p class>Customer</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="customer_slider">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="customer_cnt">
+
+              <p>Distinctively revolutionize functional sources rather than cutting-edge interfaces. Appropriately
+                productize next-generation infomediaries without interoperable e-business. Progressively empower.</p>
+              <h3>Alexzender Markos</h3>
+              <p class>Customer</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="customer_slider">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="customer_cnt">
+
+              <p>Distinctively revolutionize functional sources rather than cutting-edge interfaces. Appropriately
+                productize next-generation infomediaries without interoperable e-business. Progressively empower.</p>
+              <h3>Alexzender Markos</h3>
+              <p class>Customer</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!--CUSTOMER SECTION ENDS HERE-->
+
+    <!--AETOR_INSTAGRAM SECTION STARTS HERE-->
+    <section id="latest_news">
+      <h1>@Aetor Instagram</h1>
+      <div class="container">
+        <div class="news_div">
+          <div class="news_slider">
+            <div class="col-lg-3 news_container">
+              <div class="news_card">
+                <div class="news_img">
+                  <img src="./image/science.jpg" alt="">
+                </div>
+                <div class="overlay">
+                  <a href="#"><i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-3 news_container">
+              <div class="news_card">
+                <div class="news_img">
+                  <img src="./image/science11.jpg" alt="">
+                </div>
+                <div class="overlay">
+                  <a href="#"><i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 news_container">
+              <div class="news_card">
+                <div class="news_img">
+                  <img src="./image/science2.jpg" alt="">
+                </div>
+                <div class="overlay">
+                  <a href="#"><i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 news_container">
+              <div class="news_card">
+                <div class="news_img">
+                  <img src="./image/science3.jpg" alt="">
+                </div>
+                <div class="overlay">
+                  <a href="#"><i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 news_container">
+              <div class="news_card">
+                <div class="news_img">
+                  <img src="./image/science.jpg" alt="">
+                </div>
+                <div class="overlay">
+                  <a href="#"><i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 news_container">
+              <div class="news_card">
+                <div class="news_img">
+                  <img src="./image/scientist22.jpg" alt="">
+                </div>
+                <div class="overlay">
+                  <a href="#"><i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 news_container">
+              <div class="news_card">
+                <div class="news_img">
+                  <img src="./image/science11.jpg" alt="">
+                </div>
+                <div class="overlay">
+                  <a href="#"><i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--AETOR_INSTAGRAM SECTION ENDS HERE-->
+
+  </main>
+
+  <!--FOOTER SECTION STRATS HERE-->
+  <footer class="aboutFooter">
+    <div class="container">
+
+      <div class="row align-items-center">
+        <div class="newsInfo">
+          <h3>Subscribe to Our Newsletter!</h3>
+          <p>Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.
+          </p>
+        </div>
+        <div class="formInfo">
+          <form action="">
+            <input type="text" placeholder="Enter Your Email...">
+            <button class="button ">Subscribe</button>
+          </form>
+
+        </div>
+
+
+
+      </div>
+      <div class="border">
+
+      </div>
+      <div class="lastone">
+        <div class="container">
+          <div class="row">
+            <div class="imageicon  col-lg">
+              <img src="./image/logo2.png" alt="">
+              <p>Progressively optimize effective ideas before turnkey process improvements. Proactively disseminate</p>
+              <ul>
+                <li><span><i class="fa-brands fa-facebook"></i></span></li>
+                <li><span><i class="fa-brands fa-twitter"></i></span></li>
+                <li><span><i class="fa-brands fa-instagram"></i></span></li>
+                <li><span><i class="fa-brands fa-pinterest-p"></i></span></li>
+              </ul>
+            </div>
+            <div class="account col-lg">
+              <h4 class="heading">My Account</h4>
+
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> My Account </p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> View Cart</p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> Wishlist</p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> Compare</p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> New Products</p>
+              </a>
+
+            </div>
+
+            <div class="support col-lg">
+              <h4 class="heading">Support</h4>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> Help </p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> Contact Us</p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> Feedback</p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> Customer Service</p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> Store Locations</p>
+              </a>
+            </div>
+            <div class="Shop col-lg">
+              <h4 class="heading">Shop</h4>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> Men’s Shopping </p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> Women’s Shoppings</p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> Kids’ Shopping</p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> Discounts</p>
+              </a>
+              <a href="#">
+                <p><span><i class="fa-solid fa-greater-than"></i></span> New Arrivels</p>
+              </a>
+            </div>
+            <div class="contact col-lg">
+
+              <h4 class="heading">Contact</h4>
+              <div class="row">
+                <div class="icon col-lg-2">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="text col-lg-10">
+                  830 Broadway, New York, NY 10003,
+                  United States
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="icon col-lg-2">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="text col-lg-10">
+                  +18008660286
+                </div>
+              </div>
+              <div class="row">
+                <div class="icon col-lg-2">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="text col-lg-10">
+                  aetor.info@gmail.com
+                  info@aetor.com
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    </div>
+  </footer>
+  <!--FOOTER SECTION ENDS HERE-->
+
+  <section id="last_itemtwo">
+    <div class="container">
+      <div class="row">
+        <div class="lastdiv">
+          <p>© 2022 All Rights Reserved <span>Aytor</span> By <span>Angfuzsoft</span>.</p>
+        </div>
+        <div class="card" style="border: none;">
+          <img src="./image/25654-2-major-credit-card-logo-transparent-thumb 1.png" alt="">
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery.countdown.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/venobox.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
